@@ -12,6 +12,11 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        mono: ['"Geist Mono"', "monospace"],
+        sans: ['"Plus Jakarta Sans"', "sans-serif"],
+        openSans: ['"Open Sans"', "sans-serif"],
+      },
     },
   },
   plugins: [],
