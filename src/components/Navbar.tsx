@@ -7,6 +7,12 @@ import { IoIosArrowDown } from "react-icons/io";
 import { FiMenu } from "react-icons/fi";
 import { GiCancel } from "react-icons/gi";
 
+type DropdownState = {
+  first: boolean;
+  second: boolean;
+  third: boolean;
+};
+
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [isDropdown, setIsDropdown] = useState({
@@ -16,9 +22,9 @@ export default function Navbar() {
   });
 
   const handleDropdown = (dropdown: string) => {
-    setIsDropdown((prev: any) => ({
+    setIsDropdown((prev: DropdownState) => ({
       ...prev,
-      [dropdown]: !prev[dropdown],
+      [dropdown as keyof DropdownState]: !prev[dropdown as keyof DropdownState],
     }));
   };
 

@@ -10,9 +10,8 @@ export default function Section() {
         <div className="grid md:grid-cols-4 gap-5 px-28 absolute -top-10 ">
           {Cards.map((el) => {
             return (
-              <div>
+              <div key={el.key}>
                 <Card
-                  key={el.key}
                   image={el.image}
                   title={el.title}
                   desc={el.desc}
