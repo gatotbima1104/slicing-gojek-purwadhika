@@ -3,12 +3,10 @@ import React from "react";
 import Image from "next/image";
 
 export default function CardItem({
-  bg,
   title,
   desc,
   image,
 }: {
-  bg?: string;
   title: string;
   desc: string;
   image: StaticImageData;

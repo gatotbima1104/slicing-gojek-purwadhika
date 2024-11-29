@@ -8,7 +8,7 @@ export default function Section() {
     <div className="w-full h-screen bg-white text-black flex flex-col rounded-t-lg">
       <div className="w-full h-[350px] bg-white text-black flex flex-row relative">
         <div className="grid md:grid-cols-4 gap-5 px-28 absolute -top-10 ">
-          {Cards.map((el, index) => {
+          {Cards.map((el) => {
             return (
               <div>
                 <Card
